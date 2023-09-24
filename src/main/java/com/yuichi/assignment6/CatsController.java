@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class CatController {
-    @GetMapping("/cat")
+public class CatsController {
+    @GetMapping("/cats")
 
     public List<Cat> pet() {
         List<Cat> cats = List.of(
-                new Cat("tom", "american shorthair"),
-                new Cat("tama", "mike"));
-
+                new Cat("tom", "american short hair"),
+                new Cat("tama", "mike")
+        );
         return cats;
     }
 }
